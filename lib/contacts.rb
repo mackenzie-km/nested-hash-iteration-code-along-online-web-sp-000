@@ -16,10 +16,10 @@ require 'pry'
   
 def remove_strawberry(contacts)
 contacts.each do |person_hash, contact_details_hash|
-  contact_details_hash.each do |attribute, values|
-    attribute.each do |values|
-      if values.include?("strawberry")
-        attribute.delete("strawberry")
+  contact_details_hash.each do |details_attribute, details_values|
+    details_attribute.each do |details_values|
+      if details_values.include?("strawberry")
+        details_attribute.delete("strawberry")
       end
     end
   end
