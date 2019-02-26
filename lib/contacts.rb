@@ -19,5 +19,9 @@ contacts.each do |person, data|
   data.each do |attribute, values|
     attribute.each do |values|
       if values.include?("strawberry")
-        delete attribute
+        attribute.delete("strawberry")
+      end
+    end
+  end
+end
 end
