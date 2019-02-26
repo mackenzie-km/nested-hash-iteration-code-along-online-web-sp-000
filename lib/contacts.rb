@@ -15,9 +15,9 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-contacts.each |person, data| do
-  data.each |attribute, values| do
-    attribute.each |values| do
+contacts.each do |person, data|
+  data.each do |attribute, values|
+    attribute.each do |values|
       if values.include?("strawberry")
         attribute.delete("strawberry")
       end
